@@ -295,18 +295,18 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close" data-modal-close></button>
-            <form class="">
-                <p>Залиште свої дані, ми вам передзвонимо</p>
-                <label for="name">Ім'я</label>
-                <input type="text" name="name" id="name">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel">
-                <label for="email">Пошта</label>
-                <input type="email" name="email" id="email">
-                <label for="comment">Коментар</label>
-                <textarea name="comment" id="comment"></textarea>
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+            <form class="request">
+                <b>Залиште свої дані, ми вам передзвонимо</b>
+                <div class="request-field"><label for="name">Ім'я</label>
+                    <input type="text" name="name" id="name"></div>
+                <div class="request-field"><label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel"></div>
+                <div class="request-field"><label for="email">Пошта</label>
+                    <input type="email" name="email" id="email"></div>
+                <div class="request-field"><label for="comment">Коментар</label>
+                    <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea></div>
+                <div class="request-field"><input type="checkbox" name="policy" id="policy">
+                    <label for="policy">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label></div>
                 <button type="submit">Відправити</button>
             </form>
         </div>

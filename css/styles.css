@@ -402,6 +402,25 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
         background-size: 18px;}
         .close:hover{cursor: pointer;}
 
+        .request{width: 100%;
+        padding: 40px;
+        margin: 0px;}
+        .request-field{display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;}
+        .request-field>input,.request-field>textarea{ margin: 0;
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                border-radius: 4px;}
+        .request-field>textarea{padding: 12px 16px;
+                
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.01em;
+                
+                color: rgba(117, 117, 117, 0.5);}
+        .request-field>label{margin-bottom: 4px;}
+
     /* portfolio-styles */
     
     /* section-projects*/
