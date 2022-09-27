@@ -358,6 +358,50 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
                 width: 20px;
                 height: 20px;
                 background-position: center;}
+        .subscribe{position: relative;
+                margin-left: 93px;}
+        .subscribe>p{padding-bottom: 20px;
+                
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: var(--primary-background-color);}
+        .subscribe>input{width: 358px;
+                height: 50px;
+                margin-right: 12px;
+                padding: 15px 16px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+                border-radius: 4px;
+        background-color: var(--hero-background-color);}
+        .subscribe>button{padding: 10px 62px 10px 28px;
+                width: 200px;
+                height: 50px;
+                color: var(--primary-background-color);
+                background-color: var(--accent-background-color);
+                border: none;
+                border-radius: 4px;
+                font-family: inherit;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.88;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.06em;
+                cursor: pointer;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+        .subscribe>button:hover, .subscribe>button:focus{background-color: #188ce8;}
+        .subscribe>button::after{position: absolute;
+                content: "";
+                margin-left: 10px;
+                padding: 13px 0px;
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/send.svg);
+                background-repeat: no-repeat;
+                background-size: 24px;}
 
     .backdrop{position: fixed;
             top: 0;
@@ -409,6 +453,7 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
         flex-direction: column;
         margin-bottom: 10px;}
         .request-field>input,.request-field>textarea{ margin: 0;
+                padding: 12px 16px;
                 border: 1px solid rgba(33, 33, 33, 0.2);
                 border-radius: 4px;}
         .request-field>textarea{padding: 12px 16px;
