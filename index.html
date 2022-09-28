@@ -286,7 +286,9 @@
         <form class="subscribe">
             <p class="slogan">Підпишіться на розсилку</p>
             <input type="email" name="email" id="email" placeholder="E-mail">
-            <button type="submit">Підписатися</button>
+            <button type="submit"> <svg class="icon-subscribe">
+                <use href="./images/icons.svg#icon-send"></use>
+            </svg> Підписатися</button>
         </form>
         </div>
         
@@ -294,20 +296,20 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close" data-modal-close></button>
+            <button type="button" class="close" data-modal-close><svg class="icon-close"><use href="./images/icons.svg#icon-close-black"></use></svg></button>
             <form class="request">
                 <b>Залиште свої дані, ми вам передзвонимо</b>
                 <div class="request-field"><label for="name">Ім'я</label>
-                    <input type="text" name="name" id="name"></div>
+                    <div class="input-window"><svg class="icon-form"><use href="./images/icons.svg#icon-person-black"></use></svg><input type="text" name="name" id="name"></div></div>
                 <div class="request-field"><label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel"></div>
+                    <div class="input-window"><svg class="icon-form"><use href="./images/icons.svg#icon-phone-black"></use></svg><input type="tel" name="tel" id="tel"></div></div>
                 <div class="request-field"><label for="email">Пошта</label>
-                    <input type="email" name="email" id="email"></div>
+                    <div class="input-window"><svg class="icon-form"><use href="./images/icons.svg#icon-email-black"></use></svg><input type="email" name="email" id="email"></div></div>
                 <div class="request-field"><label for="comment">Коментар</label>
                     <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea></div>
-                <div class="request-field"><input type="checkbox" name="policy" id="policy">
+                <div class="request-field check"><input type="checkbox" name="policy" id="policy">
                     <label for="policy">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label></div>
-                <button type="submit">Відправити</button>
+                <button type="submit" class="send">Відправити</button>
             </form>
         </div>
     </div>
