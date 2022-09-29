@@ -511,14 +511,42 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
         .input-window input:hover{cursor: pointer;       
                 border-color: var(--accent-background-color);}
         .input-window:hover .icon-form{fill: var(--accent-background-color);}
-        .check label{margin-left: 8px;
+        .request-field>textarea:hover{cursor: pointer;
+                border-color: var(--accent-background-color);}
+        .check label{display: inline-block;
+                padding-left: 20px;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 1.71;
                 letter-spacing: 0.03em;}
-        .check{flex-direction: row;
-        margin-left: 12px;
-        margin-top: 20px;}
+        .check{position: relative;
+                flex-direction: row;
+                margin-left: 12px;
+                margin-top: 20px;
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+        .check input{position: absolute;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;}
+        .checkbox:checked + .icon-check{
+                background-image: url("../images/icon-check.svg");
+                color: var(--primary-background-color);
+                background-color: var(--accent-background-color);
+                background-size: contain;
+                background-origin:border-box;
+                border-color: var(--accent-background-color);}
+        .icon-check{position: absolute;
+                top: 3px;
+                left: 0px;
+                width: 16px;
+                height: 15px;
+                
+                border-radius: 2px;
+                border: solid 2px var(--title-text-color);}
+        .check>label:hover{cursor: pointer;
+        transform: fill 250ms;
+        background-origin: border-box;
+        border-color: var(--accent-background-color);}
         .send{display: inline-block;
                 margin-top:30px;
                 margin-left: 124px;
